@@ -11,6 +11,9 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<style type="text/css">
+select { float:left; }
+</style>
 </head>
 <script type="text/javascript" src="/math/resources/js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript">
@@ -26,8 +29,8 @@
 			type: "post",
 			data: {f1 : f1},
 			success: function(data){
-				console.log("success : " + data);
-				$("#div1").html(data);
+				//console.log("success : " + data);
+				$("#span1").html(data);
 			},
 			error: function(jqXHR, textStatus, errorThrown){
 				console.log("error: " + jqXHR + ", " + textStatus + ", " + errorThrown);
@@ -73,7 +76,7 @@
         }
 %>
 
-<div id="div1">학기 선택해주세요</div>
+<span id="span1">학기 선택해주세요</span>
 
 
 <%-- <jsp:include page="/views/second.jsp" flush="true" /> --%>

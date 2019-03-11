@@ -23,8 +23,8 @@
 			type: "post",
 			data: {f3 : f3},
 			success: function(data){
-				console.log("success : " + data);
-				$("#div3").html(data);
+				//console.log("success : " + data);
+				$("#span3").html(data);
 			},
 			error: function(jqXHR, textStatus, errorThrown){
 				console.log("error: " + jqXHR + ", " + textStatus + ", " + errorThrown);
@@ -74,6 +74,7 @@
 	        }
 	%>
 	
-<div id="div3">챕터 선택해주세요</div>
+<span id="span3">챕터 선택해주세요</span>
+
 </body>
 </html>

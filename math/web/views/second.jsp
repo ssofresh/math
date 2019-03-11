@@ -23,8 +23,8 @@
 			type: "post",
 			data: {f2 : f2},
 			success: function(data){
-				console.log("success : " + data);
-				$("#div2").html(data);
+				//console.log("success : " + data);
+				$("#span2").html(data);
 			},
 			error: function(jqXHR, textStatus, errorThrown){
 				console.log("error: " + jqXHR + ", " + textStatus + ", " + errorThrown);
@@ -75,6 +75,6 @@
 	        }
 	%>
 
-<div id="div2">교재 선택해주세요</div>
+<span id="span2">교재 선택해주세요</span>
 </body>
 </html>
